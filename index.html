@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quiz - One Big, Ugly Form</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -15,26 +16,26 @@
   <section class="progress-bar">
     Seems like this could be a good place for a progress bar...
   </section>
-  <section class="form">
+  <form class="form">
 
     <h3>Your Shipping Address</h3>
     <label>Name
-      <input type="text">
+      <input type="text" required>
     </label>
     <label>Address Line 1
-      <input type="text">
+      <input type="text" required>
     </label>
     <label>Address Line 2
-      <input type="text">
+      <input type="text" required>
     </label>
     <label>City
-      <input type="text">
+      <input type="text" required>
     </label>
-    <label>State/Province
-      <input type="text">
+    <label>State
+      <input type="text" required>
     </label>
     <label>Zip
-      <input type="text">
+      <input type="text" required>
     </label>
 
     <h3>Your Credit Card Information</h3>
@@ -79,7 +80,7 @@
     <label>Zip
       <input type="text">
     </label>
-  </section>
+  </form>
 
   <section class="order-review">
     <h3>Your Order</h3>
@@ -118,5 +119,7 @@
       alert("All of your information was valid, right? I'll just go ahead and assume that it is ;)\n\nThanks for your submission!");
     };
   </script>
+  <script type='text/javascript' src='knockout-3.4.0.js'></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
