@@ -13,76 +13,74 @@
     <span class="company-name">🂡 Cam's Company 🂡</span>
     <span class="company-page">Checkout Page</span>
   </header>
-  <section class="progress-bar">
-    Seems like this could be a good place for a progress bar...
-  </section>
-  <form class="form">
+  <section class="form">
+    <div class="container-fluid">
+      <form>
+      <h3>Your Shipping Address</h3>
+      <div class="form-group">
+      <label>Name
+        <input class="form-control" type="text" required>
+      </label>
+    </div>
+    <div class="form-group">
+      <label>Address Line 1
+        <input class="form-control" type="text" required>
+      </label>
+      </div>
+      <div class="form-group">
+      <label>Address Line 2
+        <input class="form-control" type="text" required>
+      </label>
+      </div>
+      <div class="form-group">
+      <label>City
+        <input class="form-control" type="text" required>
+      </label>
+      </div>
+      <div class="form-group">
+      <label>State
+        <input class="form-control" type="text" required>
+      </label>
+      </div>
+      <div class="form-group">
+      <label>Zip
+        <input class="form-control" type="text" required>
+      </label>
+      </div>
 
-    <h3>Your Shipping Address</h3>
-    <label>Name
-      <input type="text" required>
-    </label>
-    <label>Address Line 1
-      <input type="text" required>
-    </label>
-    <label>Address Line 2
-      <input type="text" required>
-    </label>
-    <label>City
-      <input type="text" required>
-    </label>
-    <label>State
-      <input type="text" required>
-    </label>
-    <label>Zip
-      <input type="text" required>
-    </label>
+    <div class="form-group">
+      <h3>Your Credit Card Information</h3>
+      <div class="row">
+        <div class="col-sm-8">
+      <label>Number
+        <input type="text" class="form-control">
+      </label>
+    </div>
+    <div class="col-sm-4">
+      <label>Type
+        <input type="text" autocomplete="cc-type" name="cc" class="form-control">
+      </label>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+      <label>Expiration Date
+        <input type="text" class="form-control" placeholder="MM/YY">
+      </label>
+    </div>
+      <div class="col-sm-4">
+      <label>CVV
+        <input type="text" class="form-control">
+      </label>
+    </div>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Same address for billing?
+      </label>
+    </div>
+  </div>
 
-    <h3>Your Credit Card Information</h3>
-    <div class="cc-warning"><em>Note: don't enter any actual credit card info!</em></div>
-    <label>Credit Card Number
-      <input type="text">
-    </label>
-    <label>Credit Card Type
-      <select name="cc">
-        <option>Visa</option>
-        <option>American Express</option>
-        <option>Mastercard</option>
-        <option>Discover</option>
-      </select>
-    </label>
-    <label>Expiration Date
-      <input type="text" placeholder="MM/YY">
-    </label>
-    <label>CVV
-      <input type="text">
-    </label>
-
-    <h3>Your Billing Address</h3>
-    <label>Same as Shipping Address?
-      <input class="inline" type="checkbox">
-    </label>
-    <label>Name
-      <input type="text">
-    </label>
-    <label>Address Line 1
-      <input type="text">
-    </label>
-    <label>Address Line 2
-      <input type="text">
-    </label>
-    <label>City
-      <input type="text">
-    </label>
-    <label>State
-      <input type="text">
-    </label>
-    <label>Zip
-      <input type="text">
-    </label>
-  </form>
-
-  <section class="order-review">
     <h3>Your Order</h3>
     <table class="your-order">
       <tr class="headings">
@@ -108,11 +106,11 @@
         <td>$550.00</td>
       </tr>
     </table>
-    <label class="check-correct">Is your order correct?
-      <input type="checkbox">
-    </label>
-    <input id="submit" type="submit">
-  </section>
+    <div class="text-center">
+    <button class="btn" type="submit">Submit</button>
+  </div>
+</div>
+</section>
   <script>
     var submit = document.querySelector('#submit');
     submit.onclick = function () {
@@ -120,6 +118,5 @@
     };
   </script>
   <script type='text/javascript' src='knockout-3.4.0.js'></script>
-  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
